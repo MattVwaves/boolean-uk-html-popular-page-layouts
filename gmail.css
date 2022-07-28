@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;}
+
+.navigation-bar {
+    border-bottom: solid 2px;
+    padding: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template:
+
+      "folders emails q-settings r-bar" 1fr /
+        1fr   2fr  1fr 40px; 
+        
+    height: 1000px;
+}
+
+.folders {
+    grid-area: folders;
+    background-color: aqua;
+}
+
+.emails {
+    grid-area: emails;
+}
+
+.q-settings {
+    grid-area: q-settings;
+    border-left: solid  slategray 1px;
+    border-right: solid  slategray 1px
+}
+
+.r-bar {
+    grid-area: r-bar;
+}
