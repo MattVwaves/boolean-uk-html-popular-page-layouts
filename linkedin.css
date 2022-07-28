@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;}
+
+.navigation-bar {
+    border: solid 2px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template:
+
+      "l-bar post r-bar" 100px
+      "l-bar feed r-bar" 1fr /
+        1fr   3fr  1.5fr;    
+    height: 1000px;
+    margin: 0px 200px 
+   }
+
+.l-bar {
+    grid-area: l-bar;
+    background-color: aquamarine;
+}
+.post {
+    grid-area: post;
+    background-color: blueviolet;
+    margin: 0 15px 15px
+}
+.r-bar {
+    grid-area: r-bar;
+    background-color: aquamarine;
+}
+.feed {
+    grid-area: feed;
+    background-color: rgb(165, 104, 221);
+    margin: 15px
+
+}
