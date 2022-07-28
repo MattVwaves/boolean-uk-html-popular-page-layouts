@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;}
+
+.container {
+    display: grid;
+    grid-template:
+
+      "sidebar server current-room" 30px
+      "sidebar room-bar chat" 770px /
+        30px   1fr  10fr ; 
+        
+    height: 1000px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(237, 227, 232);
+    padding: 10px
+}
+.server {
+    grid-area: server;
+    background-color: #f2f3f5;
+    border: solid 2px rgb(237, 227, 232);
+    padding: 10px
+}
+.current-room {
+    grid-area: current-room;
+    border-bottom: solid 2px rgb(237, 227, 232);
+    padding: 10px
+}
+.room-bar {
+    grid-area: room-bar;
+    background-color: aqua;
+    background-color: #f2f3f5;
+    border-left: solid 2px rgb(237, 227, 232);
+    border-right: solid 2px rgb(237, 227, 232);
+    padding: 10px
+}
+.chat {
+    grid-area: chat;
+    padding: 10px
+}
+
+
